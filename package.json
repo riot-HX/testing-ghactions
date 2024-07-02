@@ -1,0 +1,20 @@
+{
+  "name": "testing-ghactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riot-HX/testing-ghactions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riot-HX/testing-ghactions/issues"
+  },
+  "homepage": "https://github.com/riot-HX/testing-ghactions#readme"
+}
