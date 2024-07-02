@@ -20,3 +20,4 @@ jobs:
           commit-message: Merging latest staging code to master branch
           title: Staging -> Production
           body: Staging to production PR created by github-actions
+          branch: staging
