@@ -17,4 +17,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: production-promotion
+          commit-message: Merging latest staging code to master branch
+          title: Staging -> Production
+          body: Staging to production PR created by github-actions
