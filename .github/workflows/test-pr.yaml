@@ -34,7 +34,7 @@ jobs:
       - prepare
     steps:
       - name: Action
-        run: echo "EventAction ${{ github.event.action }} Closing without brackets - ${{ needs.prepare.outputs.branch_hash }}"
+        run: echo "EventAction ${{ github.event.action }} Closing without brackets 2 - ${{ needs.prepare.outputs.branch_hash }}"
   actionClosedBrackets:
     if: ${{ github.event.action == 'closed' }}
     runs-on: ubuntu-latest
