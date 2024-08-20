@@ -27,8 +27,8 @@ jobs:
           title: Staging -> Production
           body: Staging to production PR created by github-actions
           branch: staging
-    checkAction:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Action
-          run: echo "EventAction $github.event.action PullRequestAction $github.event.pull_request.action"
+  checkAction:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Action
+        run: echo "EventAction $github.event.action PullRequestAction $github.event.pull_request.action"
