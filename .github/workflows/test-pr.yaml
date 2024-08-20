@@ -31,4 +31,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Action
-          run: echo "EventAction: $(echo github.event.action) PullRequestAction: $(echo github.event.pull_request.action)"
+          run: echo "EventAction $github.event.action PullRequestAction $github.event.pull_request.action"
