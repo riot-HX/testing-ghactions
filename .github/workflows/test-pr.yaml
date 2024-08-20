@@ -42,4 +42,4 @@ jobs:
       - productionPromotion
     steps:
       - name: Action
-        run: echo "EventAction ${{ github.event.action }} Closing with brackets"
+        run: echo "EventAction ${{ github.event.action }} Closing with brackets 2"
