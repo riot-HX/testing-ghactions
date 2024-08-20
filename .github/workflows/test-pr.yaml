@@ -27,8 +27,19 @@ jobs:
           title: Staging -> Production
           body: Staging to production PR created by github-actions
           branch: staging
-  checkAction:
+  actionClosed:
+    if: github.event.action == 'closed'
     runs-on: ubuntu-latest
+    needs:
+      - productionPromotion
     steps:
       - name: Action
-        run: echo "EventAction ${{ github.event.action }} PullRequestAction ${{ github.event.pull_request.action }}"
+        run: echo "EventAction ${{ github.event.action }} Closing without brackets"
+  actionClosedBrackets:
+    if: ${{ github.event.action == 'closed' }}
+    runs-on: ubuntu-latest
+    needs:
+      - productionPromotion
+    steps:
+      - name: Action
+        run: echo "EventAction ${{ github.event.action }} Closing with brackets"
